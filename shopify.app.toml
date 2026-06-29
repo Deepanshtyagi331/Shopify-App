@@ -2,7 +2,7 @@
 
 client_id = "db4602fdba521e93ccddac1283876127"
 name = "deepansh-app-dev"
-application_url = "https://shopify.dev/apps/default-app-home"
+application_url = "https://shopify-announcement-app-ipsz.onrender.com"
 embedded = true
 
 [access_scopes]
@@ -10,7 +10,7 @@ embedded = true
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+redirect_urls = [ "https://shopify-announcement-app-ipsz.onrender.com/api/auth/callback" ]
 
 [webhooks]
 api_version = "2026-07"
