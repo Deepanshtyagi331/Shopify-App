@@ -1,0 +1,19 @@
+{% if shop.metafields.my_app.announcement.value != blank %}
+  <div class="shopify-app-announcement-bar" id="ShopifyAppAnnouncementBar">
+    <div class="announcement-content">
+      <span class="announcement-badge">ANNOUNCEMENT</span>
+      <span class="announcement-text-content">{{ shop.metafields.my_app.announcement.value }}</span>
+    </div>
+    <button class="announcement-close-btn" id="ShopifyAppAnnouncementClose" aria-label="Close Announcement">&times;</button>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "target": "body",
+  "stylesheet": "announcement_bar.css",
+  "javascript": "announcement_bar.js",
+  "settings": []
+}
+{% endschema %}
